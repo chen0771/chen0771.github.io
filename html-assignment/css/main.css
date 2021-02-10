@@ -28,13 +28,17 @@ dl li:nth-child(odd){
     background-color: rgb(226, 226, 160);
 }
 
-nav ul{
-    list-style:none;
+ nav li{
+    
+    list-style-type: none;
+    
+    
 }
 
 nav ul a{
     text-decoration: none;
     color: honeydew;
+  
     
 }
 
@@ -42,7 +46,7 @@ nav ul a,
 nav ul a:link,
 nav ul a:visited{
     background-color: darkslategrey;
-    border:1px solid lightgoldenrodyellow;
+    border: 1px solid honeydew;
     
 }
 
