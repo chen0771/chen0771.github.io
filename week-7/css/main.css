@@ -1,4 +1,4 @@
-html, body, div, span, applet, object, iframe,
+/* html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -11,13 +11,13 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
+	/* margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
-}
+	vertical-align: baseline; */
+} */
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -25,6 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    padding-top: 80px;
 }
 ol, ul {
 	list-style: none;
@@ -57,6 +58,10 @@ body {
     /* background-position: 100px 200px ; */
     /* background-size: cover; */
     }
+
+img{
+    width:100%;
+}
 h1 {
     color:darkcyan;
 }
@@ -68,6 +73,7 @@ p {
 
 h1,h2, h3 {
     text-decoration: underline;
+    
 }
 
 /* descendant selector */
@@ -75,9 +81,19 @@ nav ul {
     list-style:none;
 }
 
+/* EX 1 - Display and Box Sizing  */
+nav ul li{
+    display: inline-block;
+    width:49%;
+    padding: 1em;
+    box-sizing: border-box;
+
+}
+
 /* desndant selector - mutiple levels */
 
 nav ul a {
+    display: block;
     color: darkslategray;
     text-decoration: none;
     /* rem is riit element's(html tag) font size  */
@@ -86,21 +102,49 @@ nav ul a {
 }
 /* class name selector */
 .orange-link {
+    padding: 1.5em ;
+    width: 300px;
+    display: inline-block;
     background-color:darkslategrey;
     color:lavenderblush;
     text-decoration: none;
 }
 
+/* Float */
+article,
+aside{
+    width: 80%;
+    background-color: rgba(255,255,255,0.6);
+    border: 1px solid black;
+    padding: 1.5em;
+    box-sizing: border-box;
+    float: left;
+}
+aside{
+    width: 20%;
+}
+section{
+    clear: both;
+}
+
+.orange-link.large-text{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+
 /* id selector */
 #treatofweek {
     /* background-color: bisque; */
+    position: relative;
     color: lightcyan;
     background: rosybrown url("../images/bread.jpg") no-repeat center  center ;
     background-size: cover;
     color: #ccc;
     font-size: 1.5rem;
 /* 1.5 x 16px = 24px */
-    padding: 1em;
+    padding: 1em 1em 3em 1em;
     /* 1 x 24px = 24px */
     width: 50%;
 }
@@ -143,6 +187,15 @@ a[href="#treatofweek"] {
     background-color: yellow;
 }
 
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 999;
+
+}
 /* LoVe HAte */
 nav ul a,
 nav ul a:link,
