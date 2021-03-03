@@ -1,8 +1,110 @@
-body{
+body {
     background-color:#aad4cf;
+    margin: 0 ;
+	padding: 0;
+	border: 0;
 }
 
-h1{
+h1 {
     color: white;
-    background-image: ;
+    font-size: 50px;
+    text-align:center;
+    margin-top: 0mm;
+    margin-bottom: 0mm;
+    padding-top:185px;
+    padding-bottom: 105px;
 }
+
+header {
+    background-image: url("../imeges/lone-starfish-wide.jpg");
+    background-position:top center;
+    background-repeat: no-repeat;
+}
+
+h2{
+    margin: 10px;
+    font-size: 30px;
+}
+
+h3 {
+    margin: 10px;
+    font-size: 25px;
+}
+p {
+    margin: 10px;
+    height: auto;
+    width: auto;
+    font-family:sans-serif;
+}
+.container {
+    width: auto;
+    margin-right: 25px;
+  }
+
+img {
+    width: 240px;
+    float: left;
+    margin: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+nav ul {
+    list-style:none;
+    margin:0mm;
+    text-align: center;
+    padding:0;
+}
+
+nav ul li{
+    display: inline-block;
+    padding:10px 30px 10px 30px;
+    width:30%;
+    box-sizing: border-box;
+    
+}
+
+
+nav ul a {
+    display: block;
+    color: darkslategray;
+    text-decoration: none;
+    font-size: 1.4em ;
+}
+
+section{
+    padding:5px;
+}
+
+.mainbody, footer {
+    background-color: #ebfcfa;
+    max-width: 1024px;
+    margin:auto;
+}
+
+.factsaboutstarfish{
+    padding-left:28px;
+}
+
+#contact {
+    list-style: none;
+    text-decoration: none;
+}
+
+
+#contact {
+    width: auto;
+    border: 1px solid black;
+    padding: 1.5em;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+ }
+
+.site-footer p{
+    padding: 30px;
+    text-align: right;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+    
