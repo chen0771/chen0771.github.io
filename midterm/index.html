@@ -8,31 +8,40 @@
 
 </head>
 
+<!-- Header -->
+
 <body>
-    <header>
-        <h1>Lone Starfish</h1>
+    <header class="header">
+        <div class="site_header">
+            <h1>Lone Starfish</h1>
+            <!--Adding image-->
+            <img src="../midterm/imeges/lone-starfish-wide.jpg" alt="starfish_wide">
+        </div>
+        <nav>
+            <ul>
+                <li class="navline">
+                    <a href="">HOME</a>
+                </li>
+                <li class="navline">
+                    <a href="">STORY</a>
+                </li>
+                <li>
+                    <a href="">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
     </header>
+
+    <!-- main body of website -->
     <main class="mainbody">
+        <!-- First part of main body - article wrapping around the image-->
+
+
         <section>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="">HOME</a>
-                    </li>
-                    <li>
-                        <a href="">STORY</a>
-                    </li>
-                    <li>
-                        <a href="">CONTACT</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-        <article>
-            <section>
-                <h2>Life of a Starfish</h2>
-                <div class="container">
-                    <img src="imeges/lone-starfish.jpg">
+            <h2>Life of a Starfish</h2>
+            <article>
+                <div>
+                    <img src="imeges/lone-starfish.jpg" alt="starfish">
                     <P>Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola.
                         Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish
                         peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye
@@ -52,8 +61,10 @@
                         humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish
                         searobin false trevally, dottyback.</P>
                 </div>
-            </section>
-        </article>
+            </article>
+        </section>
+        <!-- Second part of main body - Facts About Starfish -->
+        <!-- Fact - using list tag -->
         <section>
             <h3>Facts About Starfish</h3>
             <ul class="factsaboutstarfish">
@@ -71,35 +82,39 @@
                 </li>
             </ul>
         </section>
+
+        <!-- Third part of main body - Contact to learn more -->
+        <!-- Form - for contact -->
         <section>
             <h3>Contact to learn more</h3>
+
             <form id="contact">
-                
-                    <div>
-                        <label for="fullname">Your Name</label>
-                        <br>
-                        <br>
-                        <input type="text" id="fullname" name="fullname">
-                    </div>
-                
+
+                <div>
+                    <label for="yourname">Your Name</label>
+                    <br>
+                    <br>
+                    <input type="text" id="yourname" name="yourname">
+                </div>
+
                 <br>
-                
-                    <div>
-                        <label for="youremail">Your Email</label>
-                        <br>
-                        <br>
-                        <input type="text" id="youremail" name="youremail">
-                    </div>
-                
+
+                <div>
+                    <label for="youremail">Your Email</label>
+                    <br>
+                    <br>
+                    <input type="text" id="youremail" name="youremail">
+                </div>
+
                 <br>
-                
-                    <div>
-                        <label for="yourmessage">Your Message</label>
-                        <br>
-                        <br>
-                        <input type="text" id="yourmessage" name="yourmessage">
-                    </div>
-                
+
+                <div>
+                    <label for="yourmessage">Your Message</label>
+                    <br>
+                    <br>
+                    <textarea name="yourmessage" id="yourmessage" cols="30" rows="10"></textarea>
+                </div>
+
                 <div>
                     <h4>Would you like to visit the strafish?</h4>
                     <label for="yes">Yes</label>
@@ -107,17 +122,18 @@
                     <label for="no">No</label>
                     <input type="radio" name="past" id="no">
                     <label for="maybe">Maybe</label>
-                    <input type="radio" name="past" id="no">
+                    <input type="radio" name="past" id="maybe">
                 </div>
                 <br>
                 <button type="submit">SEND</button>
             </form>
         </section>
     </main>
+    
+    <!-- ***** footer for the page ****** -->
+    <footer class="site-footer">
+        <p>&copy; Lone Starfish</p>
+    </footer>
 </body>
-
-<footer class="site-footer">
-    <p>&copy; Lone Starfish</p>
-</footer>
 
 </html>
