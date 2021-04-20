@@ -14,173 +14,211 @@
 <!-- **** Header **** -->
 
 <body>
-    <header class="header">
-        <div>
-            <img src="../final-project/images/logo.png" alt="logo">
-        </div>
-        <!-- Navigation -->
-        <nav class="container">
-            <ul class="navbar">
-                <li class="navItem">
-                    <a href="#">Home</a>
-                </li>
-                <li class="navItem">
-                    <a href="#">About Us</a>
-                </li>
-                <li class="navItem">
-                    <a href="#">Sevices</a>
-                </li>
-                <li class="navItem">
-                    <a href="#">Team</a>
-                </li>
-                <li class="navItem">
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-            <div>
-                <input type="text" placeholder="Search.." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </div>
-        </nav>
+    <div id="all" >
+        <header>
+            <div class="header">
+                <div class="logo">
 
-    </header>
+                    <img src="../final-project/images/logo.png" alt="logo">
+
+                </div>
+                <!-- Navigation -->
+                <nav class="container">
+                    <ul class="navbar">
+                        <li class="navItem">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#Aboutus">About Us</a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#Services">Services</a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#Team">Team</a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#Contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="search-container">
+                    <form>
+                      <input type="text" placeholder="Search" name="search">
+                      <button type="submit"><i class="fa fa-search" style="color: #c78c06; "></i></button>
+                    </form>
+                </div>
+            </div>
+        </header>
 
     <main>
         <!-- Section one - Top of the page - Welcome to... -->
-        <section class="container">
+        <section class="part1">
             <div class="Welcome">
-            <div class="block">
-            <h1>Welcome to Three Star Media</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolorem iste consectetur quam, reiciendis distinctio
-                repellendus obcaecati sequi veritatis nihil necessitatibus
-                tempore consequuntur modi!</p>
-            </div>
-            <div class="block">
-                <a href="#">Connect with us </a>
-                <i class="fas fa-caret-right"></i>
-            </div>
-        </div>
-        </section>
 
-        <br><br><br>
-        <!-- Section two - About Us -->
-        <section class="container">
-            <div class="Aboutus">
-                <div class="block">
-            <img src="../final-project/images/about-us.jpg" alt="about-us">
-        </div>
-        <div class="block">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Iure ipsa tempore laboriosam quia reprehenderit alias
-                nemo nam sit quo nihil! Odio maiores cupiditate ducimus
-                nulla minima porro temporibus dolores adipisci!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Iure ipsa tempore laboriosam quia reprehenderit alias
-                nemo nam sit quo nihil! Odio maiores cupiditate ducimus
-                nulla minima porro temporibus dolores adipisci!</p>
+                <div class="block2">
+                    <h1 class="w1">Welcome to Three Star Media</h1>
+                    <p class="w2"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolorem iste consectetur quam, reiciendis distinctio
+                        repellendus obcaecati sequi veritatis nihil necessitatibus
+                        tempore consequuntur modi!</p>
+                </div>
+                <div class="block3">
+                    <button type="button" onclick="window.location.href='#'" class="contact">
+                        <a class="c1">Connect with us &nbsp; </a>
+                        <i style="font-size: 30px" class="fa">&#xf0da;</i>
+
+                    </button>
+                </div>
             </div>
+        </section>
+        <!-- Section two - About Us -->
+        <section >
+            <div class="Aboutus" id="Aboutus">
+                <div class="block1">
+                    <img src="../final-project/images/about-us.jpg" alt="about-us">
+                </div>
+                <div class="block2">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Iure ipsa tempore laboriosam quia reprehenderit alias
+                        nemo nam sit quo nihil! Odio maiores cupiditate ducimus
+                        nulla minima porro temporibus dolores adipisci!</p>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Iure ipsa tempore laboriosam quia reprehenderit alias
+                        nemo nam sit quo nihil! Odio maiores cupiditate ducimus
+                        nulla minima porro temporibus dolores adipisci!</p>
+                </div>
             </div>
         </section>
 
         <!-- Section three - Our Services -->
-        <section class="container">
+        <section class="container" id="Services">
             <h2>Our Services</h2>
 
-            <div class="Services">
+            <div class="Services" >
 
-                <div class="block">
+                <div class="DigitalPlans">
                     <img src="../final-project/images/digital.jpg" alt="digital">
-                    <h3>Digital transformation</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Sapiente quisquam ducimus porro quasi ea
-                        dignissimos, molestias velit dolorem soluta exceptu
-                        ri blanditiis laboriosam, libero in voluptates nemo
-                        tenetur alias ipsam corrupti!</p>
-                    <div>
-                        <a href="">Digital Plans</a>
-                        <i class="fas fa-caret-right"></i>
+                    <div class="Digital">
+                        <h3>Digital transformation</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Sapiente quisquam ducimus porro quasi ea
+                            dignissimos, molestias velit dolorem soluta exceptu
+                            ri blanditiis laboriosam, libero in voluptates nemo
+                            tenetur alias ipsam corrupti!</p>
+                        <div class="DigitalPlans_button">
+                            <button type="button" onclick="window.location.href='#'" class="contact">
+                                <a href="">Digital Plans</a>
+                                <i style="font-size: 30px" class="fa">&#xf0da;</i>
+                            </button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="block">
+                <div class="MarketingPlans">
                     <img src="../final-project/images/marketing.jpg" alt="marketing">
-                    <h3>Marketing</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Sapiente quisquam ducimus porro quasi ea
-                        dignissimos, molestias velit dolorem soluta exceptu
-                        ri blanditiis laboriosam, libero in voluptates nemo
-                        tenetur alias ipsam corrupti!</p>
-                    <div>
-                        <a href="">Marketing Plans</a>
-                        <i class="fas fa-caret-right"></i>
+                    <div class="Marketing">
+                        <h3>Marketing</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Sapiente quisquam ducimus porro quasi ea
+                            dignissimos, molestias velit dolorem soluta exceptu
+                            ri blanditiis laboriosam, libero in voluptates nemo
+                            tenetur alias ipsam corrupti!</p>
+                        <div class="MarketingPlans_button">
+                            <button type="button" onclick="window.location.href='#'" class="contact">
+                                <a href="">Marketing Plans</a>
+                                <i style="font-size: 30px" class="fa">&#xf0da;</i>
+                            </button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="block">
+                <div class="VideoPlans">
                     <img src="../final-project/images/video.jpg" alt="">
-                    <h3>Video Production</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Sapiente quisquam ducimus porro quasi ea
-                        dignissimos, molestias velit dolorem soluta exceptu
-                        ri blanditiis laboriosam, libero in voluptates nemo
-                        tenetur alias ipsam corrupti!</p>
-                    <div>
-                        <a href="">Video Plans</a>
-                        <i class="fas fa-caret-right"></i>
+                    <div class="Video">
+                        <h3>Video Production</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Sapiente quisquam ducimus porro quasi ea
+                            dignissimos, molestias velit dolorem soluta exceptu
+                            ri blanditiis laboriosam, libero in voluptates nemo
+                            tenetur alias ipsam corrupti!</p>
+                        <div class="VideoPlans_button">
+                            <button type="button" onclick="window.location.href='#'" class="contact">
+                                <a href="">Video Plans</a>
+                                <i style="font-size: 30px" class="fa">&#xf0da;</i>
+                            </button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="block">
+                <div class="WebPlans">
                     <img src="../final-project/images/web.jpg" alt="web">
-                    <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Sapiente quisquam ducimus porro quasi ea
-                        dignissimos, molestias velit dolorem soluta exceptu
-                        ri blanditiis laboriosam, libero in voluptates nemo
-                        tenetur alias ipsam corrupti!</p>
-                    <div>
-                        <a href="">Web Plans</a>
-                        <i class="fas fa-caret-right"></i>
+                    <div class="Web">
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Sapiente quisquam ducimus porro quasi ea
+                            dignissimos, molestias velit dolorem soluta exceptu
+                            ri blanditiis laboriosam, libero in voluptates nemo
+                            tenetur alias ipsam corrupti!</p>
+                        <div class="WebPlans_button">
+                            <button type="button" onclick="window.location.href='#'" class="contact">
+                                <a href="">Web Plans</a>
+                                <i style="font-size: 30px" class="fa">&#xf0da;</i>
+                            </button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="block">
+                <div class="PrintPlans">
                     <img src="../final-project/images/print.jpg" alt="print">
-                    <h3>Print</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Sapiente quisquam ducimus porro quasi ea
-                        dignissimos, molestias velit dolorem soluta exceptu
-                        ri blanditiis laboriosam, libero in voluptates nemo
-                        tenetur alias ipsam corrupti!</p>
-                    <div>
-                        <a href="">Print Plans</a>
-                        <i class="fas fa-caret-right"></i>
-                    </div>
-                </div>
-
-                <div class="block">
-                    <h3>Our vision</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Sapiente quisquam ducimus porro quasi ea
-                        dignissimos, molestias velit dolorem soluta exceptu
-                        ri blanditiis laboriosam, libero in voluptates nemo
-                        tenetur alias ipsam corrupti!</p>
-                    <div>
-                        <a href="">Learn More</a>
-                        <i class="fas fa-caret-right"></i>
+                    <div class="Print">
+                        <h3>Print</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Sapiente quisquam ducimus porro quasi ea
+                            dignissimos, molestias velit dolorem soluta exceptu
+                            ri blanditiis laboriosam, libero in voluptates nemo
+                            tenetur alias ipsam corrupti!</p>
+                        <div class="PrintPlans_button">
+                            <button type="button" onclick="window.location.href='#'" class="contact">
+                                <a href="">Print Plans</a>
+                                <i style="font-size: 30px" class="fa">&#xf0da;</i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section>
+                <div>
+                    <div class="Vision">
+                        <h3>Our vision</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Sapiente quisquam ducimus porro quasi ea
+                            dignissimos, molestias velit dolorem soluta exceptu
+                            ri blanditiis laboriosam, libero in voluptates nemo
+                            tenetur alias ipsam corrupti!</p>
+                        <div class="Vision_button">
+                            <button type="button" onclick="window.location.href='#'" class="contact">
+                                <a href="">Learn More</a>
+                                <i style="font-size: 30px" class="fa">&#xf0da;</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+       
 
         <!-- Section four - Our team  -->
-        <section class="container">
+        <section id="Team">
             <h2>Our Team</h2>
-            <div class="Team">
-                <div class="block"><img src="../final-project/images/john.jpg" alt="john"></div>
-                <div class="block">
+            <div class="OurTeam">
+            <div class="John">
+                <div class="John_img">
+                    <img src="../final-project/images/john.jpg" alt="john">
+                </div>
+                <div class="John_block">
                     <h3>John Doe</h3>
                     <h4>CEO and Co-owner</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -188,7 +226,12 @@
                         spiciatis fuga aut. Magni nobis pariatur cumque ut aut
                         provident cum necessitatibus quibusdam, ullam animi?</p>
                 </div>
-                <div class="block">
+            </div>
+            <div class="Bob">
+                <div class="Bob_img">
+                    <img src="../final-project/images/bob.jpg" alt="Bob">
+                </div>
+                <div class="Bob_block">
                     <h3>Bob Rite</h3>
                     <h4>CFO and Co-owner</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -196,42 +239,70 @@
                         spiciatis fuga aut. Magni nobis pariatur cumque ut aut
                         provident cum necessitatibus quibusdam, ullam animi?</p>
                 </div>
-                <div class="block"><img src="../final-project/images/bob.jpg" alt="Bob"></div>
             </div>
+        </div>
         </section>
 
         <!-- Section five - Contact Us -->
-        <section class="container">
+        <section class="contact_Section" id="Contact">
             <h2>Contact Us</h2>
             <!-- ** Part of 1 - Send us a message ** -->
             <div class="contact">
-                <div class="block">
+                <div class="SendMessage">
                     <h3>Send us a message</h3>
                     <!-- Name -->
-                    <div>
+                    <div class="Fullmane">
                         <label for="Fullname">Full Name</label>
                         <br>
-                        <input type="text" id="Fullname" name="Fullname">
+                        <input type="text" id="Fullname" name="Fullname" style="height: 30px;">
                     </div>
                     <!-- Email -->
-                    <div>
+                    <div class="Email">
                         <label for="Email"> Email</label>
                         <br>
-                        <input type="text" id="Email" name="Email">
+                        <input type="text" id="Email" name="Email" style="height: 30px;">
                     </div>
                     <!-- Message -->
-                    <div>
+                    <div class="Message">
                         <label for="Message">Message</label>
                         <br>
                         <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
                     </div>
-
-                    <button type="submit">Send</button>
+                    <div class="SendButton">
+                        <button type="button" class="contact">
+                            <a href="">Send</a>
+                        </button>
+                    </div>
                 </div>
             </div>
 
-            <!-- ** Part of 2 - Location ** -->
-            <div class="block">
+            <!-- Part of 2 - Hours of operation -->
+            <div class="Hoursofoperation">
+                <h3>Hours of operation</h3>
+
+                <!-- Hours table  -->
+                <table class="Timetable">
+                    <thead>
+                        <tr>
+                            <th id="day">Day</th>
+                            <th id="hours">Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="monday">Monday - Friday</td>
+                            <td id="am">9 AM - 6 PM</td>
+                        </tr>
+                        <tr>
+                            <td id="saturday">Saturday - Sunday</td>
+                            <td id="closed">Closed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- ** Part of 3 - Location ** -->
+            <div class="location">
                 <h3>Location</h3>
                 <!--  Map -->
                 <iframe
@@ -239,31 +310,7 @@
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
 
-            <!-- Part of 3 - Hours of operation -->
-            <div class="block">
-                <h3>Hours of operation</h3>
 
-                <!-- Hours table  -->
-                <table >
-                    <caption></caption>
-                    <thead>
-                        <tr>
-                            <th>Day</th>
-                            <th>Hours</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Monday - Friday</td>
-                            <td>9 AM - 6 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Saturday - Sunday</td>
-                            <td>Closed</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
 
         </section>
     </main>
@@ -271,9 +318,12 @@
 
     <!-- ******* Adding footer ********  -->
     <footer>
-        <p>&copy; Copyright Three Star Media, 2020</p>
-        <p>All images are taken from <u>Unsplash</u></p>
+        <div class="footer_content">
+            <p>&copy; Copyright Three Star Media, 2020</p>
+            <p>All images are taken from <u>Unsplash</u></p>
+        </div>
     </footer>
+    </div>
 </body>
 
 </html>
