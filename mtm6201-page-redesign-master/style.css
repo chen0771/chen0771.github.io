@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Padauk&family=Pattaya&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    
+}
+/* Styles respond to screen sizes of phone */
+@media screen and (max-width:767px){
+    
+    /* Style of Navbar */
+    nav#nav.nav {
+        padding: 0;
+        width: 100%;
+        background-color: #457b9d;
+        border: 0;
+        margin: 0;
+        height: 160px;
+        text-align: center;
+    }
+
+    nav#nav a.nav-link {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-family: 'Pattaya', sans-serif;
+        color: #e9c46a;
+        margin: 0px;
+        text-shadow: 0px 4px #992400;
+        transition:0.5s;
+    }
+    nav#nav a.nav-link:hover {
+        font-size: 30px;
+        color: #992400;
+        text-shadow: 0px 4px #e9c46a;
+    }
+
+    /* Style of "Hello"/ Home section */
+   section#home.home {
+        background-color: #e76f51;
+        padding: 50px;
+    }
+
+    h1.page-title {
+        font-family: 'Pattaya', sans-serif;
+        color: #f1faee;
+        padding: 10px;
+        font-size: 40px;
+        text-shadow: 0px 4px #992400;
+    }
+
+   section#home.home p{
+        font-family: 'Padauk', sans-serif;
+        color: #f1faee;
+        font-size: 18px;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 25px;
+        padding: 10px;
+    }
+    
+    /* Style of "About Me"/ About section */
+    section#about.about {
+        background-color: #caffbf;
+        padding: 50px;
+    }
+
+    .about h2.section-title {
+        font-family: 'Pattaya', sans-serif;
+        font-size: 40px;
+        color: #457b9d;
+        padding: 10px;
+        text-shadow: 0px 4px #36b47a
+    }
+
+  img.about-image {
+        width: 150px;
+    }
+
+    section#about.about p {
+        font-family: 'Padauk', sans-serif;
+        color: #457b9d;
+        font-size: 18px;
+    }
+
+    /* Style of contact section */
+    section#contact.contact {
+        background-color: #2a9d8f;
+        padding: 50px;
+    }
+
+    .contact h2.section-title {
+        font-family: 'Pattaya', sans-serif;
+        font-size: 40px;
+        color: #f1faee;
+        padding: 10px;
+        text-shadow: 0px 4px #264653;
+    }
+
+    section#contact.contact p {
+        font-family: 'Padauk', sans-serif;
+        color: #f1faee;
+        font-size: 18px;
+        margin: 0 0 10px 0;
+    }
+
+    /* Style of contact section - form */
+    #contact.contact form.contact-form {
+        background-color: #e9c46a;
+        border-radius: 25px;
+        width: 100%;
+        padding:0px;
+        margin: 0;
+        border: 0;
+        box-shadow: 10px 20px #992400;
+    }
+    form.contact-form div.contact-form-section:nth-child(1) {
+        padding: 20px 20px 0 20px;
+    }
+
+    form.contact-form div.contact-form-section:nth-child(2) {
+        padding: 0px 20px 0 20px;
+    }
+
+    form.contact-form div.contact-form-section:nth-child(3) {
+        padding: 0px 20px 0 20px;
+    }
+
+    div label.contact-form-label {
+        font-family: 'Padauk', sans-serif;
+        font-size: 20px;
+        color: #264653;
+        padding: 10px 10px 10px 0;
+    }
+
+    form .contact-form-input {
+        width: 100%;
+        padding: 0;
+      }
+
+    button {
+          background-color: #2a9d8f;
+          padding: 5px;
+          margin: 10px 10px 20px 20px;
+          color: #f1faee ;
+          transition-duration: 0.2s;
+      }
+
+    button:hover {
+        background-color: #f1faee;
+        color: #2a9d8f;
+      }
+
+      /* Style of footer */
+      footer {
+        padding: 20px 0 20px 0;
+        width: 100%;
+        background-color: #457b9d;
+        border: 0;
+        margin: 0;
+      }
+      footer p {
+        padding: 0 50px 0 50px;
+        display: flex;
+        text-align: left;
+        font-family: 'Padauk', sans-serif;
+        color: #e9c46a;
+        margin: 0px;
+      }
+
+}
+
+
+/* **************************** */
+/* **************************** */
+/* **************************** */
+
+
+
+/* Styles respond to screen sizes of large phone and landscape tablets */
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    
+        /* Style of Navbar */
+        nav#nav.nav {
+            padding: 0px;
+            width: 100%;
+            background-color: #457b9d;
+            border: 0;
+            margin: 0;
+            height: 120px;
+        }
+    
+        nav#nav a.nav-link {
+            padding: 45px;
+            display: inline-block;
+            flex-direction: column;
+            text-align: center;
+            font-family: 'Pattaya', sans-serif;
+            color: #e9c46a;
+            margin: 0px;
+            text-shadow: 0px 4px #992400;
+            transition:0.5s;
+        }
+
+        nav#nav a.nav-link:hover {
+            font-size: 30px;
+            color: #992400;
+            text-shadow: 0px 4px #e9c46a;
+        }
+    
+        /* Style of "Hello"/ Home section */
+       section#home.home {
+            background-color: #e76f51;
+            padding: 50px;
+        }
+    
+        h1.page-title {
+            font-family: 'Pattaya', sans-serif;
+            color: #f1faee;
+            padding: 10px;
+            font-size: 40px;
+            text-shadow: 0px 4px #992400;
+        }
+    
+       section#home.home p{
+            font-family: 'Padauk', sans-serif;
+            color: #f1faee;
+            font-size: 18px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 25px;
+            padding: 10px;
+        }
+        
+        /* Style of "About Me"/ About section */
+        section#about.about {
+            background-color: #caffbf;
+            padding: 50px;
+        }
+    
+        .about h2.section-title {
+            font-family: 'Pattaya', sans-serif;
+            font-size: 40px;
+            color: #457b9d;
+            padding: 10px;
+            text-shadow: 0px 4px #36b47a
+        }
+    
+      img.about-image {
+            width: 150px;
+        }
+    
+        section#about.about p {
+            font-family: 'Padauk', sans-serif;
+            color: #457b9d;
+            font-size: 18px;
+        }
+    
+        /* Style of contact section */
+        section#contact.contact {
+            background-color: #2a9d8f;
+            padding: 50px;
+        }
+    
+        .contact h2.section-title {
+            font-family: 'Pattaya', sans-serif;
+            font-size: 40px;
+            color: #f1faee;
+            padding: 10px;
+            text-shadow: 0px 4px #264653;
+        }
+    
+        section#contact.contact p {
+            font-family: 'Padauk', sans-serif;
+            color: #f1faee;
+            font-size: 18px;
+            margin: 0 0 10px 0;
+        }
+    
+        /* Style of contact section - form */
+        #contact.contact form.contact-form {
+            background-color: #e9c46a;
+            border-radius: 25px;
+            width: 100%;
+            padding:0px;
+            margin: 0;
+            border: 0;
+            box-shadow: 10px 20px #992400;
+        }
+
+        form.contact-form div.contact-form-section:nth-child(1) {
+            padding: 20px 20px 0 20px;
+        }
+
+        form.contact-form div.contact-form-section:nth-child(2) {
+            padding: 0px 20px 0 20px;
+        }
+
+        form.contact-form div.contact-form-section:nth-child(3) {
+            padding: 0px 20px 0 20px;
+        }
+
+        div label.contact-form-label {
+            font-family: 'Padauk', sans-serif;
+            font-size: 20px;
+            color: #264653;
+            padding: 10px 10px 10px 0;
+        }
+    
+        form .contact-form-input {
+            width: 100%;
+            padding: 0;
+          }
+
+        button {
+              background-color: #2a9d8f;
+              padding: 5px;
+              margin: 10px 10px 20px 20px;
+              color: #f1faee ;
+              transition-duration: 0.2s;
+          }
+    
+        button:hover {
+            background-color: #f1faee;
+            color: #2a9d8f;
+          }
+    
+          /* Style of footer */
+        footer {
+            padding: 20px 0 20px 0;
+            width: 100%;
+            background-color: #457b9d;
+            border: 0;
+            margin: 0;
+          }
+          footer p {
+            padding: 0 50px 0 50px;
+            display: flex;
+            text-align: left;
+            font-family: 'Padauk', sans-serif;
+            color: #e9c46a;
+            margin: 0px;
+          }
+
+        }
+
+/* **************************** */
+/* **************************** */
+/* **************************** */
+
+
+
+/* Styles respond to screen sizes of laptops */
+@media screen and (min-width:1025px) {
+
+
+        /* Style of Navbar */
+        nav#nav.nav {
+            padding: 0px;
+            width: 100%;
+            background-color: #457b9d;
+            border: 0;
+            margin: 0;
+            height: 120px;
+        }
+    
+        nav#nav a.nav-link {
+            padding: 45px;
+            display: inline-block;
+            flex-direction: column;
+            text-align: center;
+            font-family: 'Pattaya', sans-serif;
+            color: #e9c46a;
+            margin: 0px;
+            text-shadow: 0px 4px #992400;
+            transition:0.5s;
+        }
+
+        nav#nav a.nav-link:hover {
+            font-size: 30px;
+            color: #992400;
+            text-shadow: 0px 4px #e9c46a;
+        }
+    
+        /* Style of "Hello"/ Home section */
+       section#home.home {
+            background-color: #e76f51;
+            padding: 50px 100px 50px 100px;
+        }
+    
+        h1.page-title {
+            font-family: 'Pattaya', sans-serif;
+            color: #f1faee;
+            padding: 10px;
+            font-size: 40px;
+            text-shadow: 0px 4px #992400;
+        }
+    
+       section#home.home p{
+            font-family: 'Padauk', sans-serif;
+            color: #f1faee;
+            font-size: 18px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 25px;
+            padding: 10px;
+            margin: 0 ;
+        }
+        
+        /* Style of "About Me"/ About section */
+        section#about.about {
+            background-color: #caffbf;
+            padding: 50px;
+        }
+    
+        .about h2.section-title {
+            font-family: 'Pattaya', sans-serif;
+            font-size: 40px;
+            color: #457b9d;
+            padding: 10px;
+            text-shadow: 0px 4px #36b47a
+        }
+    
+      img.about-image {
+            width: 150px;
+        }
+    
+        section#about.about p {
+            font-family: 'Padauk', sans-serif;
+            color: #457b9d;
+            font-size: 18px;
+        }
+    
+        /* Style of contact section */
+        section#contact.contact {
+            background-color: #2a9d8f;
+            padding: 50px ;
+            
+        }
+    
+        .contact h2.section-title {
+            font-family: 'Pattaya', sans-serif;
+            font-size: 40px;
+            color: #f1faee;
+            padding: 10px;
+            text-shadow: 0px 4px #264653;
+        }
+    
+        section#contact.contact p {
+            font-family: 'Padauk', sans-serif;
+            color: #f1faee;
+            font-size: 18px;
+            padding: 0px;
+        }
+    
+        /* Style of contact section - form */
+        #contact.contact form.contact-form {
+            background-color: #e9c46a;
+            border-radius: 25px;
+            width: 100%;
+            padding:0px;
+            margin-top: 10px;
+            border: 0;
+            box-shadow: 10px 20px #992400;
+        }
+
+        form.contact-form div.contact-form-section:nth-child(1) {
+            padding: 20px 20px 0 20px;
+        }
+
+        form.contact-form div.contact-form-section:nth-child(2) {
+            padding: 0px 20px 0 20px;
+        }
+
+        form.contact-form div.contact-form-section:nth-child(3) {
+            padding: 0px 20px 0 20px;
+        }
+
+        div label.contact-form-label {
+            font-family: 'Padauk', sans-serif;
+            font-size: 20px;
+            color: #264653;
+            padding: 10px 10px 10px 0;
+        }
+    
+        form .contact-form-input {
+            width: 100%;
+            padding: 0;
+          }
+
+        button {
+              background-color: #2a9d8f;
+              padding: 5px;
+              margin: 10px 10px 20px 20px;
+              color: #f1faee ;
+              transition-duration: 0.2s;
+          }
+    
+        button:hover {
+            background-color: #f1faee;
+            color: #2a9d8f;
+          }
+    
+          /* Style of footer */
+        footer {
+            padding: 20px 0 20px 100px;
+            width: 100%;
+            background-color: #457b9d;
+            border: 0;
+            margin: 0;
+          }
+          footer p {
+            padding: 0 ;
+            display: flex;
+            text-align: left;
+            font-family: 'Padauk', sans-serif;
+            color: #e9c46a;
+            margin: 0px;
+          }
+           /* Gird "Hello", "About Me", and "Contact Me" section */
+          .main {
+            display:grid;
+            grid-template-columns: auto auto ;
+            grid-template-rows: 270px 550px;
+          }
+          .main section:nth-child(1) {
+            grid-column:span 2;
+          }
+}
