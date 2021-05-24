@@ -368,7 +368,6 @@ time, mark, audio, video {
 /* Styles respond to screen sizes of laptops */
 @media screen and (min-width:1025px) {
 
-
         /* Style of Navbar */
         nav#nav.nav {
             padding: 0px;
@@ -517,7 +516,7 @@ time, mark, audio, video {
     
           /* Style of footer */
         footer {
-            padding: 20px 0 20px 100px;
+            padding: 20px 0 20px 0px;
             width: 100%;
             background-color: #457b9d;
             border: 0;
@@ -525,12 +524,14 @@ time, mark, audio, video {
           }
           footer p {
             padding: 0 ;
-            display: flex;
-            text-align: left;
+            display: flexd;
+            text-align: center;
             font-family: 'Padauk', sans-serif;
             color: #e9c46a;
-            margin: 0px;
+            margin: 0 0 0 0;
           }
+
+
            /* Gird "Hello", "About Me", and "Contact Me" section */
           .main {
             display:grid;
