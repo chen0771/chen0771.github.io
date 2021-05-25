@@ -21,7 +21,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
     
 }
-/* Styles respond to screen sizes of phone */
+/* Styles respond to screen sizes of phone and small Screen */
 @media screen and (max-width:767px){
     
     /* Style of Navbar */
@@ -365,7 +365,7 @@ time, mark, audio, video {
 
 
 
-/* Styles respond to screen sizes of laptops */
+/* Styles respond to screen sizes of laptops and Bigger screen */
 @media screen and (min-width:1025px) {
 
         /* Style of Navbar */
