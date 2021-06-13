@@ -594,13 +594,14 @@ I am adding a media screen size for respond to table screen*/
 	
 
 	.fa-facebook-square {
-		visibility:hidden;
 		display: none;
+		visibility:hidden;
+		
 	}
 
 	.fa-twitter-square {
-		visibility:hidden;
 		display: none;
+		visibility:hidden;
 	}
 
 }
