@@ -879,6 +879,7 @@ each one taking 1 part */
 	/* I am hiden the circle facebook and circle twittericon.
 	display:none; can hiden the element that you dont need */
 	.fa-facebook {
+		visibility:hidden;
 		display: none;
 	}
 
@@ -892,6 +893,7 @@ each one taking 1 part */
 	}
 
 	.fa-twitter {
+		visibility:hidden;
 		display: none;
 	}
 
