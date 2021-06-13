@@ -324,10 +324,13 @@ Using font-family and font- weight to setting the Typography. */
 	display:none; can hiden the element that you dont need */
 	i.fa-twitter-square {
 		display: none;
+		visibility:hidden;
+
 	}
 
 	i.fa-facebook-square {
 		display: none;
+		visibility:hidden;
 	}
 }
 
