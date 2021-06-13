@@ -591,13 +591,18 @@ I am adding a media screen size for respond to table screen*/
 
 	/* I am hiden the square facebook and square twitter icon.
 	display:none; can hiden the element that you dont need */
-	.fa-twitter-square {
+	
+
+	.fa-facebook-square {
+		visibility:hidden;
 		display: none;
 	}
 
-	.fa-facebook-square {
+	.fa-twitter-square {
+		visibility:hidden;
 		display: none;
 	}
+
 }
 
 
@@ -902,7 +907,7 @@ each one taking 1 part */
 	}
 
 	.fa-instagram {
-		margin-right: 40px;
+		margin-right: 0px;
 	}
 	/* Using Grid to seperate two part of footer */
 	footer {
