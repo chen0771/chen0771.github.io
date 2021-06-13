@@ -1,0 +1,912 @@
+/* adding the code to embed a font from google font that I can use the font family successfully  in my website*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* The @media rule is used in media queries to apply different styles for different media types/devices.
+I am adding a media screen size for respond to phone screen*/
+@media screen and (max-width: 768px) {
+
+	/* adding background color for header and body  */
+	header,
+	body {
+		background-color: #f7f7ff;
+	}
+
+	/* adding background color for footer */
+	footer {
+		background-color: #fffd8c;
+	}
+
+	/* using margin to make sure there has 40px blanks，also setting the img size*/
+	.logo img {
+		width: 114px;
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+
+	/* using margin to make sure there has 40px blanks, also setting the font size
+Using font-family and font- weight to setting the Typography. */
+	h1 {
+		margin-left: 40px;
+		margin-right: 20%;
+		font-size: 60px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: bold;
+		color: #333131;
+	}
+
+	.header_p {
+		margin-left: 40px;
+		margin-right: 40px;
+		margin-top: 10px;
+		font-size: 24px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		color: #333131;
+	}
+
+	/* using margin to make sure there has 40px blanks */
+	.girl {
+		margin-left: 40px;
+		margin-right: 40px;
+		margin-bottom: 10px;
+	}
+
+	/* Using "background-color" "border-radius" "box-shadow" making White background, radius and shadow for "applyform" */
+	.applyform {
+		background-color: white;
+		margin: 20px 40px 60px 40px;
+		padding: 30px;
+		border-radius: 25px;
+		box-shadow: 5px 10px 15px #33313177;
+	}
+
+	h2 {
+		font-size: 40px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		color: #333131;
+	}
+
+	.applyform_p {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-size: 16px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		color: #333131;
+	}
+
+	/* Form for "Apply Now" - Using "box-sizing:border-box" to will shrink to absorb that extra width. This typically makes it much easier to size elements. */
+	.infobar input[type=text] {
+		box-sizing: border-box;
+		width: 100%;
+		border: 0px;
+		padding: 20px;
+		border-radius: 11px;
+		font-size: 16px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		background-color: #F4F4F5;
+		color: #9B9B9B;
+		margin-bottom: 15px;
+	}
+
+	/* Checkbox - Zoomed size of check box tomake the check box Bigger, changed font family.
+	I have been try to make the check box to be the same with XD example, but it still won't be the perfect.*/
+	.checkbox {
+		display: flex;
+		font-size: 16px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		color: #333131;
+		margin-top: 10px;
+	}
+
+	.checkbox input {
+		margin: 0;
+		zoom: 190%;
+	}
+
+	.checkbox label {
+		margin-left: 5px;
+	}
+
+	/* Button - using "font-family"changed font style, adding backgrund color, "border: none;" to removed solid border  */
+	.button_drive {
+		border: none;
+		background-color: #57eeab;
+		padding: 7px;
+		margin: 0;
+		text-align: center;
+		border-radius: 11px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		text-decoration: none;
+		color: #333131;
+		font-size: 24px;
+	}
+
+	/* The Sentence Below the button - using "font-family"changed font style.
+ "text-decoration:none;" to remove the Original style of "a href"*/
+
+	.applyform_p2 {
+		font-size: 14px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		color: #333131;
+	}
+
+	.applyform_p2 a {
+		text-decoration: none;
+		color: #FF8480;
+	}
+
+	/* footer setting - setting padding for fix the body and header blanks*/
+	footer {
+		padding: 20px 40px 20px 40px;
+	}
+
+	/* Using :nth-child(x) to separate Typography */
+	.footer_p p:nth-child(1) {
+		margin-bottom: 15px;
+		font-size: 18px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		color: #333131;
+	}
+
+	.footer_p p:nth-child(2) {
+		margin-bottom: 15px;
+		font-size: 16px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		color: #333131;
+	}
+
+	/* footer from - Using "box-sizing:border-box" to will shrink to absorb that extra width. This typically makes it much easier to size elements.
+ Using font-family and font- weight to setting the Typography.
+ Also changed Background color.*/
+	.footer_form input[type=text] {
+		box-sizing: border-box;
+		width: 100%;
+		border: 0px;
+		padding: 10px;
+		border-radius: 11px;
+		font-size: 16px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+		background-color: #F7F7FF;
+		color: #707070;
+	}
+
+
+	/* Calculate button - using "font-family"changed font style, adding backgrund color, "border: none;" to removed solid border  */
+	.button {
+		border: none;
+		background-color: #FF8480;
+		padding: 5px;
+		margin: 0;
+		text-align: center;
+		border-radius: 11px;
+		width: 100%;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		text-decoration: none;
+		color: #F7F7FF;
+		font-size: 24px;
+	}
+
+
+	/* gird form - Using "display:grid" to Layout footer form.
+ Using margin to making gap.*/
+
+	div.footer_form {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+	}
+
+	.footer_form .hours {
+		grid-column: span 1;
+		margin: 0px 10px 10px 0px;
+	}
+
+	.footer_form .city {
+		grid-column: span 3;
+	}
+
+	.footer_form .button_calculate {
+		grid-column: span 4;
+	}
+
+
+	/* icons - find icons from Fontawesome. margin the top and bottom. Using "display:flex;"
+	and "justify-content: space-around;" to put the icons in inline-level flex container  */
+
+	.media_icons {
+		margin-top: 30px;
+		margin-bottom: 10px;
+		font-size: 34.88px;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	/* I am hiden the square facebook and square twitter icon.
+	display:none; can hiden the element that you dont need */
+	.fa-twitter-square {
+		display: none;
+	}
+
+	.fa-facebook-square {
+		display: none;
+	}
+}
+
+
+
+/* ******************************* */
+/* ******************************* */
+/* ******************************* */
+/* ******************************* */
+
+
+
+
+
+/* The @media rule is used in media queries to apply different styles for different media types/devices.
+I am adding a media screen size for respond to table screen*/
+@media screen and (min-width:769px) and (max-width:1023px) {
+
+	/* adding background color for header and body  */
+	header,
+	body {
+		background-color: #f7f7ff;
+	}
+
+	/* adding background color for footer */
+	footer {
+		background-color: #fffd8c;
+	}
+
+	/* using margin to make sure there has 80px blanks，also setting the img size*/
+	.logo img {
+		width: 114px;
+		margin-left: 80px;
+		margin-right: 80px;
+	}
+
+	/* using margin to make sure there has 80px blanks, also setting the font size
+	Using font-family and font- weight to setting the Typography. */
+	h1 {
+		margin-left: 80px;
+		margin-right: 30%;
+		font-size: 80px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: bold;
+		color: #333131;
+	}
+
+	.header_p {
+		margin-left: 80px;
+		margin-right: 80px;
+		margin-top: 10px;
+		font-size: 24px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		color: #333131;
+	}
+
+	/* using margin to make sure there has 200px blanks. 
+	"position: absolute;" make overlapping with img and .header_p */
+	.girl img {
+		margin-left: 200px;
+		margin-right: 200px;
+		margin-left: 20%;
+		position: relative;
+	}
+
+	/* Using "background-color" "border-radius" "box-shadow" making White background, radius and shadow for "applyform" */
+	.applyform {
+		background-color: white;
+		margin: 30px 80px 60px 80px;
+		padding: 30px;
+		border-radius: 25px;
+		box-shadow: 5px 10px 15px #33313177;
+	}
+
+	h2 {
+		font-size: 40px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		color: #333131;
+	}
+
+	.applyform_p {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-size: 30px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		color: #333131;
+	}
+
+	/* Form for "Apply Now" - Using "box-sizing:border-box" to will shrink to absorb that extra width. This typically makes it much easier to size elements. */
+	.infobar input[type=text] {
+		box-sizing: border-box;
+		width: 100%;
+		border: 0px;
+		padding: 28px;
+		border-radius: 11px;
+		font-size: 18px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		background-color: #F4F4F5;
+		color: #9B9B9B;
+		margin-bottom: 15px;
+	}
+
+	.infobar {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.infobar .phonenumber {
+		order: 1;
+	}
+
+	/* Checkbox - Zoomed size of check box tomake the check box Bigger, changed font family*/
+	.checkbox {
+		display: flex;
+		font-size: 20px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		color: #333131;
+	}
+
+	.checkbox input {
+		margin: 0;
+		zoom: 220%;
+	}
+
+	.checkbox label {
+		margin-left: 5px;
+	}
+
+	/* Button - using "font-family"changed font style, adding backgrund color, "border: none;" to removed solid border  */
+	.button_drive {
+		border: none;
+		background-color: #57eeab;
+		padding: 7px;
+		margin: 0;
+		text-align: center;
+		border-radius: 11px;
+
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		text-decoration: none;
+		color: #333131;
+		font-size: 32px;
+	}
+	
+	/* The Sentence Below the button - using "font-family"changed font style.
+	 "text-decoration:none;" to remove the Original style of "a href"
+	 "text-align: center;" to make sentence at the center */
+
+	.applyform_p2 {
+		font-size: 17px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		color: #333131;
+		text-align: center;
+	}
+
+	.applyform_p2 a {
+		text-decoration: none;
+		color: #FF8480;
+	}
+
+	/* footer setting - setting padding for fix the body and header blanks*/
+	footer {
+		padding: 20px 80px 20px 80px;
+
+	}
+
+	/* Using :nth-child(x) to separate Typography
+	   "display: inline-block;" make the sentence align left*/
+	.footer_p p:nth-child(1) {
+		display: inline-block;
+		margin-bottom: 15px;
+		font-size: 18px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		color: #333131;
+	}
+
+	.footer_p p:nth-child(2) {
+		display: inline-block;
+		margin-bottom: 15px;
+		font-size: 16px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		color: #333131;
+	}
+
+	/* footer from - Using "box-sizing:border-box" to will shrink to absorb that extra width. This typically makes it much easier to size elements.
+	 Using font-family and font- weight to setting the Typography.
+	 Also changed Background color.*/
+	.footer_form input[type=text] {
+		box-sizing: border-box;
+		width: 100%;
+		border: 0px;
+		padding: 10px;
+		border-radius: 11px;
+		font-size: 16px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+		background-color: #F7F7FF;
+		color: #707070;
+	}
+
+
+	/* Calculate button - using "font-family"changed font style, adding backgrund color, "border: none;" to removed solid border  */
+	.button {
+		border: none;
+		background-color: #FF8480;
+		padding: 5px;
+		margin: 0;
+		text-align: center;
+		border-radius: 11px;
+		width: 100%;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		text-decoration: none;
+		color: #F7F7FF;
+		font-size: 24px;
+	}
+
+	/* gird form - Using "display:grid" to Layout footer form.
+	 Using margin to making gap.*/
+
+	div.footer_form {
+		display: grid;
+		grid-template-columns: repeat(9, 1fr);
+	}
+
+	.footer_form .hours {
+		grid-column: span 2;
+		margin: 0px 10px 10px 0px;
+	}
+
+	.footer_form .city {
+		grid-column: span 4;
+		margin: 0px 10px 10px 0px;
+	}
+
+	.footer_form .button_calculate {
+		grid-column: span 3;
+	}
+
+
+	/* icons - find icons from Fontawesome. margin the top and bottom. Using "display:flex;"
+		and "justify-content: space-around;" to put the icons in inline-level flex container  */
+
+	.media_icons {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: 150px;
+		margin-right: 150px;
+		font-size: 34.88px;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	/* I am hiden the square facebook and square twitter icon.
+	display:none; can hiden the element that you dont need */
+	.fa-twitter-square {
+		display: none;
+	}
+
+	.fa-facebook-square {
+		display: none;
+	}
+}
+
+
+
+
+/* ******************************* */
+/* ******************************* */
+/* ******************************* */
+/* ******************************* */
+
+
+
+
+
+/* The @media rule is used in media queries to apply different styles for different media types/devices.
+I am adding a media screen size for respond to dasktop screen*/
+@media screen and (min-width: 1024px) {
+
+	/* Using grid to seprate main body become three
+each one taking 1 part */
+	.main {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.main .title-sentence {
+		grid-column: 1;
+	}
+
+	.main .girl {
+		grid-column: 2;
+	}
+
+	.main .applyform {
+		grid-column: 3;
+	}
+
+
+	/* adding background color for header and body  */
+	header,
+	body {
+		background-color: #f7f7ff;
+	}
+
+	/* adding background color for footer */
+	footer {
+		background-color: #fffd8c;
+	}
+
+	/* using margin to make sure there has 80px blanks，also setting the img size*/
+	.logo img {
+		width: 114px;
+		margin-left: 80px;
+		margin-right: 80px;
+	}
+
+	/* using margin to make sure there has 80px blanks, also setting the font size
+	Using font-family and font- weight to setting the Typography. */
+	h1 {
+		margin-left: 80px;
+		margin-right: 0;
+		font-size: 80px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: bold;
+		color: #333131;
+	}
+
+	.header_p {
+		margin-left: 80px;
+		margin-right: 0px;
+		margin-top: 10px;
+		font-size: 24px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		color: #333131;
+	}
+
+	/* using margin to make sure there has 200px blanks. 
+	"position: absolute;" make overlapping with img and .header_p */
+	.girl img {
+		margin-left: -100px;
+		margin-right: -100px;
+	}
+
+	/* Using "background-color" "border-radius" "box-shadow" making White background, radius and shadow for "applyform" */
+	.applyform {
+
+		background-color: white;
+		margin-right: 80px;
+		margin-bottom: 80px;
+		padding: 30px;
+		border-radius: 25px;
+		box-shadow: 5px 10px 15px #33313177;
+	}
+
+	h2 {
+		font-size: 40px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		color: #333131;
+	}
+
+	.applyform_p {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-size: 30px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		color: #333131;
+	}
+
+	/* Form for "Apply Now" - Using "box-sizing:border-box" to will shrink to absorb that extra width. This typically makes it much easier to size elements. */
+	.infobar input[type=text] {
+		box-sizing: border-box;
+		width: 100%;
+		border: 0px;
+		padding: 28px;
+		border-radius: 11px;
+		font-size: 18px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		background-color: #F4F4F5;
+		color: #9B9B9B;
+		margin-bottom: 15px;
+	}
+
+	.infobar {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.infobar .phonenumber {
+		order: 1;
+	}
+
+	/* Checkbox - Zoomed size of check box tomake the check box Bigger, changed font family*/
+	.checkbox {
+		display: flex;
+		font-size: 20px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		color: #333131;
+	}
+
+	.checkbox input {
+		margin: 0;
+		zoom: 220%;
+	}
+
+	.checkbox label {
+		margin-left: 5px;
+	}
+
+	/* Button - using "font-family"changed font style, adding backgrund color, "border: none;" to removed solid border  */
+	.button_drive {
+		border: none;
+		background-color: #57eeab;
+		padding: 7px;
+		margin: 0;
+		text-align: center;
+		border-radius: 11px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		text-decoration: none;
+		color: #333131;
+		font-size: 32px;
+	}
+
+	/* The Sentence Below the button - using "font-family"changed font style.
+	 "text-decoration:none;" to remove the Original style of "a href"
+	 "text-align: center;" to make sentence at the center */
+
+	.applyform_p2 {
+		font-size: 17px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		color: #333131;
+		text-align: center;
+	}
+
+	.applyform_p2 a {
+		text-decoration: none;
+		color: #FF8480;
+	}
+
+	/* footer setting - setting padding for fix the body and header blanks*/
+	footer {
+		padding: 20px 80px 20px 80px;
+
+	}
+
+	/* Using :nth-child(x) to separate Typography
+	   "display: inline-block;" make the sentence align left*/
+	.footer_p p:nth-child(1) {
+		display: inline-block;
+		margin-bottom: 15px;
+		font-size: 18px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		color: #333131;
+	}
+
+	.footer_p p:nth-child(2) {
+		display: inline-block;
+		margin-bottom: 15px;
+		font-size: 16px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		color: #333131;
+	}
+
+	/* footer from - Using "box-sizing:border-box" to will shrink to absorb that extra width. This typically makes it much easier to size elements.
+	 Using font-family and font- weight to setting the Typography.
+	 Also changed Background color.*/
+	.footer_form input[type=text] {
+		box-sizing: border-box;
+		width: 100%;
+		border: 0px;
+		padding: 10px;
+		border-radius: 11px;
+		font-size: 16px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+		background-color: #F7F7FF;
+		color: #707070;
+	}
+
+
+	/* Calculate button - using "font-family"changed font style, adding backgrund color, "border: none;" to removed solid border  */
+	.button {
+		border: none;
+		background-color: #FF8480;
+		padding: 5px;
+		margin: 0;
+		text-align: center;
+		border-radius: 11px;
+		width: 100%;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		text-decoration: none;
+		color: #F7F7FF;
+		font-size: 24px;
+	}
+
+
+	/* gird form - Using "display:grid" to Layout footer form.
+	 Using margin to making gap.*/
+
+	div.footer_form {
+		display: grid;
+		grid-template-columns: repeat(9, 1fr);
+	}
+
+	.footer_form .hours {
+		grid-column: span 2;
+		margin: 0px 10px 10px 0px;
+	}
+
+	.footer_form .city {
+		grid-column: span 4;
+		margin: 0px 10px 10px 0px;
+	}
+
+	.footer_form .button_calculate {
+		grid-column: span 3;
+	}
+
+
+	/* icons - find icons from Fontawesome. margin the top and bottom. Using "display:flex;"
+		and "justify-content: space-around;" to put the icons in inline-level flex container  */
+
+	.media_icons {
+		align-items: center;
+		font-size: 34.88px;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	/* I am hiden the circle facebook and circle twittericon.
+	display:none; can hiden the element that you dont need */
+	.fa-facebook {
+		display: none;
+	}
+
+	.fa-facebook-square {
+		order: 1;
+		margin-right: 40px;
+	}
+
+	.fa-linkedin {
+		order: 2;
+	}
+
+	.fa-twitter {
+		display: none;
+	}
+
+	.fa-twitter-square {
+		margin-right: 40px;
+	}
+
+	.fa-instagram {
+		margin-right: 40px;
+	}
+	/* Using Grid to seperate two part of footer */
+	footer {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr)
+	}
+
+
+}
