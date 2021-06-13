@@ -322,11 +322,11 @@ Using font-family and font- weight to setting the Typography. */
 
 	/* I am hiden the square facebook and square twitter icon.
 	display:none; can hiden the element that you dont need */
-	.fa-twitter-square {
+	i.fa-twitter-square {
 		display: none;
 	}
 
-	.fa-facebook-square {
+	i.fa-facebook-square {
 		display: none;
 	}
 }
@@ -593,13 +593,13 @@ I am adding a media screen size for respond to table screen*/
 	display:none; can hiden the element that you dont need */
 	
 
-	.fa-facebook-square {
+	i.fa-facebook-square {
 		display: none;
 		visibility:hidden;
 		
 	}
 
-	.fa-twitter-square {
+	i.fa-twitter-square {
 		display: none;
 		visibility:hidden;
 	}
@@ -884,31 +884,31 @@ each one taking 1 part */
 
 	/* I am hiden the circle facebook and circle twittericon.
 	display:none; can hiden the element that you dont need */
-	.fa-facebook {
+	i.fa-facebook {
 		visibility:hidden;
 		display: none;
 	}
 
-	.fa-facebook-square {
+	i.fa-facebook-square {
 		order: 1;
 		margin-right: 40px;
 	}
 
-	.fa-linkedin {
+	i.fa-linkedin {
 		order: 2;
 	}
 
-	.fa-twitter {
+	i.fa-twitter {
 		visibility:hidden;
 		display: none;
 	}
 
-	.fa-twitter-square {
+	i.fa-twitter-square {
 		margin-right: 40px;
 	}
 
-	.fa-instagram {
-		margin-right: 0px;
+	i.fa-instagram {
+		margin-right: 40px;
 	}
 	/* Using Grid to seperate two part of footer */
 	footer {
