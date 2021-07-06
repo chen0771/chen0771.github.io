@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rajdhani:wght@400;600&display=swap');
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+header {
+    background-color:#B0C436;
+    height: 70px;
+}
+.logo img{
+    width: 200px;
+    position: absolute;
+
+}
+.logo {
+    display:flex;
+    justify-content:center;
+    padding-top: 10px;
+}
+
+.navbar {
+    padding-top: 20px;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    display: grid;
+    grid-template-columns:repeat(5,1fr);
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    text-align: center;
+    display:flex;
+    justify-content:center;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.home:hover {
+    animation: hover 0.5s infinite;
+}
+@keyframes hover {
+    0%{
+      transform: scale(1);
+    }
+   
+    100%{
+     transform: scale(2);
+    } 
+  }
+
+.findus {
+    grid-column:4/span 1;
+}
+
+.headerad {
+    background-image: url(../images/2.jpeg);
+    background-position: 30% 40%;
+    height: 850px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.title {
+    padding: 200px 0px 0 350px;
+    color:cornsilk;
+}
+
+h1 {
+    font-size: 70px;
+    font-family: 'Pacifico', cursive;
+}
+.title p {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 24px;
+}
+p {
+    font-family: 'Rajdhani', sans-serif;
+}
+.title-bottom p{
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content:center;
+    align-items:flex-end;
+    padding: 350px 0 0 0;
+    color: cornsilk;
+}
+
+.menu {
+    margin: 50px 300px 0 300px ;
+}
+.all {
+    background-color: rgb(255, 243, 205);
+}
+
+h2 {
+    margin: 20px 0 50px 0;
+    font-family: 'Pacifico', cursive;
+    display:flex;
+    justify-content:center;
+    font-size: 40px;
+    color: #653A71;
+    margin-bottom: 30px;
+}
+
+.icecream img{
+    width: 270px;
+    display: inline-flex;
+    justify-content:center;
+    padding: 30px;
+}
+
+.icecream {
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:reapet(2,1fr);
+    text-align: center;
+    
+}
+.icecream p {
+    color: #653A71;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.icecream-2 {
+    border: solid 10px white;
+    border-radius: 50px;
+}
+
+.icecream-4 {
+    border: solid 10px white;
+    border-radius: 50px;
+}
+.icecream-6 {
+    border: solid 10px white;
+    border-radius: 50px;
+}
+
+.story-content {
+    margin: 50px 350px 0 350px ;
+}
+
+.story-content img {
+    width: 400px;
+    border-radius:10px 100px;
+    box-shadow: 20px 20px 0px #9568af;
+}
+.story-grid {
+    display: flex;
+}
+.story-content p{
+    margin-left: 80px;
+    margin-top: 30px;
+    font-size: 25px;
+    color: #653A71;
+}
+
+strong {
+    font-weight: 600;
+}
+
+footer {
+    margin: 60px 0 0 0px;
+    padding: 20px 350px 20px 350px;
+    background-color: #B0C436;
+}
+.media {
+    display: flex;
+	justify-content:center;
+    margin-bottom: 10px;
+    color: #2c1931;
+}
+.copyright {
+    display: flex;
+	justify-content:center;
+    opacity: 65%;
+    color: #653A71;
+}
