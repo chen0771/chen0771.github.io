@@ -61,12 +61,12 @@ header {
 
 .navbar {
     padding-top: 20px;
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 230px;
+    padding-right: 230px;
     padding-bottom: 10px;
     font-weight: 400;
     display: grid;
-    grid-template-columns:repeat(5,1fr);
+    grid-template-columns:repeat(6,1fr);
     list-style: none;
 }
 
@@ -81,14 +81,16 @@ header {
     transition: 0.7s;
     box-shadow: inset 0 0 0 0 #B0C436;
 }
+
 /* Using :hover to creating transition of mouse hover the button */
 .navbar a:hover {
     box-shadow: inset 256px 0 0 0 #653A71;
     color: #fff;
 }
+
 /* Using grid-column to seperate "products" and "find us" */
 .findus {
-    grid-column:4/span 1;
+    grid-column:5/span 1;
 }
 
 /* ---- Body content: menu --- */
@@ -129,7 +131,7 @@ h1 {
 .icecream {
     display: grid;
     grid-template-columns:repeat(2,1fr);
-    grid-template-rows:reapet(6,1fr);
+    grid-template-rows:repeat(6,1fr);
 }
 .icecream p {
     
@@ -393,7 +395,7 @@ I am adding a media screen size for respond to table screen*/
     .icecream {
         display: grid;
         grid-template-columns:repeat(2,1fr);
-        grid-template-rows:reapet(6,1fr);
+        grid-template-rows:repeat(6,1fr);
     }
     .icecream p {
         
