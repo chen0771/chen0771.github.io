@@ -288,7 +288,7 @@ footer p {
 
 
 /* The @media rule is used in media queries to apply different styles for different media types/devices.
-I am adding a media screen size for respond to dasktop screen*/
+I am adding a media screen size for respond to table screen*/
 @media  (min-width: 768px) and (max-width: 1199px){
     
     /* For setting font-family to all taxt in this page */
@@ -330,7 +330,7 @@ I am adding a media screen size for respond to dasktop screen*/
         padding-bottom: 10px;
         font-weight: 400;
         display: grid;
-        grid-template-columns:repeat(5,1fr);
+        grid-template-columns:repeat(6,1fr);
         list-style: none;
     }
     
@@ -352,7 +352,7 @@ I am adding a media screen size for respond to dasktop screen*/
     }
     /* Using grid-column to seperate "products" and "find us" */
     .findus {
-        grid-column:4/span 1;
+        grid-column:5/span 1;
     }
     
     /* ---- Body content: menu --- */
@@ -553,7 +553,7 @@ I am adding a media screen size for respond to dasktop screen*/
 
 
 /* The @media rule is used in media queries to apply different styles for different media types/devices.
-I am adding a media screen size for respond to dasktop screen*/
+I am adding a media screen size for respond to cellphone or smaller screen*/
 @media (min-width: 480px) and (max-width: 767px){
     
     /* For setting font-family to all taxt in this page */

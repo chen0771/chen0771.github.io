@@ -23,11 +23,17 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 
+/* The @media rule is used in media queries to apply different styles for different media types/devices.
+I am adding a media screen size for respond to dasktop screen*/
+@media screen and (min-width: 1200px){
 
+    /* Setting background color */
 .all {
     background-color: rgb(255, 243, 205);
 }
 
+/* --- Header Navbar --- */
+/* using flex and grid to layout Logo and navbar, flex for center the logo, grid for seprate the each one of nav.*/
 header {
     background-color:#B0C436;
     height: 70px;
@@ -74,20 +80,16 @@ header {
     grid-column:4/span 1;
 }
 
+/* ------ Loation ------ */
+/* adding animation for this page(named:title, time:2s) */
 .location {
-    margin: 0 500px 0 500px;
     animation: title 2s;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
 }
 
-h1 {
-    margin-top: 40px;
-    font-size: 40px;
-    color: #653A71;
-    font-family: 'Pacifico', cursive;
-    display:flex;
-    justify-content:center;
-   
-}
 @keyframes title {
     0% {
         opacity: 0;
@@ -98,6 +100,16 @@ h1 {
         opacity: 1;
         transform: translateY(0px);
     }
+}
+
+/* Setting content of location by using flex and justify-content to center the text.*/
+h1 {
+    margin-top: 40px;
+    font-size: 40px;
+    color: #653A71;
+    font-family: 'Pacifico', cursive;
+    display:flex;
+    justify-content:center;
 }
 
 .p1 {
@@ -115,16 +127,16 @@ h1 {
     color: #653A71;
 }
 
+/* adding box-shadow and border-radius to create the style of map. */
 .map {
-    width: 100%;
-    align-items: center;
+    width: 800px;
     margin-bottom: 50px;
     border-radius:10px 100px;
     box-shadow: 20px 20px 0px #9568af;
 }
 
 
-
+/* ----- message ----- */
 h2 {
     margin: 20px 0 50px 0;
     font-family: 'Pacifico', cursive;
@@ -135,14 +147,21 @@ h2 {
     margin-bottom: 30px;
 }
 
+/* also using "title" animation on this part */
 .form {
-    margin: 0 500px 0 500px;
     font-family: 'Rajdhani', sans-serif;
     color: #653A71;
     font-weight: 600;
-    animation: title 2s ;
+    animation: title 2s;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
 }
-
+.SendMessage {
+    width: 800px;
+}
+/* adding 3mm ridge border for input and textarea*/
 input,textarea {
     width: 100%;
     margin-top: 10px;
@@ -150,20 +169,23 @@ input,textarea {
     border: 3mm ridge rgba(190, 211, 1, 0.692);
 }
 
+/* For Send button, I adding a pointer "cursor " for it.*/
 .send {
     font-size: 20px;
-    padding: 13px 50px 13px;
+    padding: 13px 50px 13px ;
+    margin-bottom: 60px;
     color: #653A71;
     border: 4px solid #653A71;
     cursor: pointer;
     position: relative;
     background-color: rgba(0, 0, 0, 0);
-    width: 100%;
+    width: 103%;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 600;
     font-size: 20px;
   }
   
+  /* creates a pseudo-element for mouse hover the button*/
   .send::after {
     content: "";
     background-color: #B0C436;
@@ -175,12 +197,15 @@ input,textarea {
     left: 7px;
     transition: 0.2s;
   }
-  
+  /* After the mouse hover the button,background color will back to original position. */
   .send:hover::after {
     top: 0px;
     left: 0px;
   }
 
+
+  /* ---- footer ----- */
+/* Using padding to locate media link and copyright */
 footer {
     padding-top:20px ;
     padding-bottom: 20px;
@@ -194,6 +219,7 @@ footer p {
     font-size: 15px;
     font-family: 'Rajdhani', sans-serif;
 }
+/* Using flex to locatethe media link and copyright */
 .media {
     display: flex;
 	justify-content:center;
@@ -206,3 +232,459 @@ footer p {
     opacity: 65%;
     color: #653A71;
 }
+}
+
+
+
+
+
+/* ******************* */
+/* ******************* */
+/* ******************* */
+/* ******************* */
+/* ******************* */
+
+
+
+
+
+/* The @media rule is used in media queries to apply different styles for different media types/devices.
+I am adding a media screen size for respond to table screen*/
+@media  (min-width: 768px) and (max-width: 1199px){
+
+    /* Setting background color */
+    .all {
+        background-color: rgb(255, 243, 205);
+    }
+    
+    /* --- Header Navbar --- */
+    /* using flex and grid to layout Logo and navbar, flex for center the logo, grid for seprate the each one of nav.*/
+    header {
+        background-color:#B0C436;
+        height: 70px;
+    }
+    .logo img{
+        width: 200px;
+        position: absolute;
+    
+    }
+    .logo {
+        display:flex;
+        justify-content:center;
+        padding-top: 10px;
+    }
+    
+    .navbar {
+        padding-top: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        font-weight: 400;
+        display: grid;
+        grid-template-columns:repeat(6,1fr);
+        list-style: none;
+    }
+    
+    .navbar a {
+        text-decoration: none;
+        text-align: center;
+        display:flex;
+        justify-content:center;
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: 600;
+        color: #653A71;
+        transition: 0.7s;
+        box-shadow: inset 0 0 0 0 #B0C436;
+    }
+    /* Using :hover to creating transition of mouse hover the button */
+    .navbar a:hover {
+        box-shadow: inset 256px 0 0 0 #653A71;
+        color: #fff;
+    }
+    /* Using grid-column to seperate "products" and "find us" */
+    .findus {
+        grid-column:5/span 1;
+    }
+
+    /* ------ Loation ------ */
+    /* adding animation for this page(named:title, time:2s) */
+    .location {
+        animation: title 2s;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+    }
+    
+    @keyframes title {
+        0% {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    
+    /* Setting content of location by using flex and justify-content to center the text.*/
+    h1 {
+        margin-top: 40px;
+        font-size: 40px;
+        color: #653A71;
+        font-family: 'Pacifico', cursive;
+        display:flex;
+        justify-content:center;
+    }
+    
+    .p1 {
+        margin: 50px 0 10px 0 ;
+        display: flex;
+        justify-content:center;
+        font-family: 'Rajdhani', sans-serif;
+        color: #653A71;
+    }
+    .p2 {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content:center;
+        font-family: 'Rajdhani', sans-serif;
+        color: #653A71;
+    }
+    
+    /* adding box-shadow and border-radius to create the style of map. */
+    .map {
+        width: 600px;
+        margin-bottom: 50px;
+        border-radius:10px 100px;
+        box-shadow: 20px 20px 0px #9568af;
+    }
+    
+    
+    /* ----- message ----- */
+    h2 {
+        margin: 20px 0 50px 0;
+        font-family: 'Pacifico', cursive;
+        display:flex;
+        justify-content:center;
+        font-size: 40px;
+        color: #653A71;
+        margin-bottom: 30px;
+    }
+    
+    /* also using "title" animation on this part */
+    .form {
+        font-family: 'Rajdhani', sans-serif;
+        color: #653A71;
+        font-weight: 600;
+        animation: title 2s;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+    }
+    .SendMessage {
+        width: 600px;
+    }
+    /* adding 3mm ridge border for input and textarea*/
+    input,textarea {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        border: 3mm ridge rgba(190, 211, 1, 0.692);
+    }
+    
+    /* For Send button, I adding a pointer "cursor " for it.*/
+    .send {
+        font-size: 20px;
+        padding: 13px 50px 13px ;
+        margin-bottom: 60px;
+        color: #653A71;
+        border: 4px solid #653A71;
+        cursor: pointer;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0);
+        width: 103%;
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+      }
+      
+      /* creates a pseudo-element for mouse hover the button*/
+      .send::after {
+        content: "";
+        background-color: #B0C436;
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        height: 100%;
+        top: 7px;
+        left: 7px;
+        transition: 0.2s;
+      }
+      /* After the mouse hover the button,background color will back to original position. */
+      .send:hover::after {
+        top: 0px;
+        left: 0px;
+      }
+    
+    
+      /* ---- footer ----- */
+    /* Using padding to locate media link and copyright */
+    footer {
+        padding-top:20px ;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction:column;
+        background-color: #B0C436;
+        font-size: 20px;
+    }
+    footer p {
+        font-size: 15px;
+        font-family: 'Rajdhani', sans-serif;
+    }
+    /* Using flex to locatethe media link and copyright */
+    .media {
+        display: flex;
+        justify-content:center;
+        margin-bottom: 10px;
+        color: #2c1931;
+    }
+    .copyright {
+        display: flex;
+        justify-content:center;
+        opacity: 65%;
+        color: #653A71;
+    }
+    }
+    
+
+
+
+
+/* ******************* */
+/* ******************* */
+/* ******************* */
+/* ******************* */
+/* ******************* */
+
+
+
+
+
+/* The @media rule is used in media queries to apply different styles for different media types/devices.
+I am adding a media screen size for respond to cellphone or smaller screen*/
+@media (min-width: 480px) and (max-width: 767px){
+
+    /* Setting background color */
+    .all {
+        background-color: rgb(255, 243, 205);
+    }
+    
+  /* --- Header Navbar --- */
+    /* using flex and grid to layout Logo and navbar, flex for center the logo, grid for seprate the each one of nav.*/
+    header {
+        background-color:#B0C436;
+    }
+    .logo img{
+        width: 200px;
+    
+    }
+    .logo {
+        display:flex;
+        justify-content:center;
+        padding-top: 10px;
+    }
+    
+    .navbar {
+        padding-top: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        font-weight: 400;
+        display: flex;
+        flex-direction:column;
+        list-style: none;
+    }
+    
+    .navbar a {
+        text-decoration: none;
+        text-align: center;
+        display:flex;
+        justify-content:center;
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: 600;
+        color: #653A71;
+        margin-bottom: 5px;
+        transition: 0.7s;
+        box-shadow: inset 0 0 0 0 #B0C436;
+    }
+    /* Using :hover to creating transition of mouse hover the button */
+    .navbar a:hover {
+        box-shadow: inset 10px 0px 0px 30px#653A71;
+        color: #fff;
+    }
+    /* Using grid-column to seperate "products" and "find us" */
+    .findus {
+        grid-column:4/span 1;
+    }
+    
+
+    /* ------ Loation ------ */
+    /* adding animation for this page(named:title, time:2s) */
+    .location {
+        animation: title 2s;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+    }
+    
+    @keyframes title {
+        0% {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    
+    /* Setting content of location by using flex and justify-content to center the text.*/
+    h1 {
+        margin-top: 40px;
+        font-size: 30px;
+        width: 100%;
+        color: #653A71;
+        font-family: 'Pacifico', cursive;
+        display:flex;
+        justify-content:center;
+    }
+    
+    .p1 {
+        margin: 50px 0 10px 0 ;
+        display: flex;
+        justify-content:center;
+        font-family: 'Rajdhani', sans-serif;
+        color: #653A71;
+    }
+    .p2 {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content:center;
+        font-family: 'Rajdhani', sans-serif;
+        color: #653A71;
+    }
+    
+    /* adding box-shadow and border-radius to create the style of map. */
+    .map {
+        width: 400px;
+        margin-bottom: 50px;
+        border-radius:10px 100px;
+        box-shadow: 20px 20px 0px #9568af;
+    }
+    
+    
+    /* ----- message ----- */
+    h2 {
+        margin: 20px 0 50px 0;
+        font-family: 'Pacifico', cursive;
+        display:flex;
+        justify-content:center;
+        color: #653A71;
+        margin-bottom: 30px;
+        font-size: 30px;
+        width: 100%;
+    }
+    
+    /* also using "title" animation on this part */
+    .form {
+        font-family: 'Rajdhani', sans-serif;
+        color: #653A71;
+        font-weight: 600;
+        animation: title 2s;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+    }
+    .SendMessage {
+        width: 400px;
+    }
+    /* adding 3mm ridge border for input and textarea*/
+    input,textarea {
+        width: 95%;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        border: 3mm ridge rgba(190, 211, 1, 0.692);
+    }
+    
+    /* For Send button, I adding a pointer "cursor " for it.*/
+    .send {
+        font-size: 20px;
+        padding: 13px 50px 13px ;
+        margin-bottom: 60px;
+        color: #653A71;
+        border: 4px solid #653A71;
+        cursor: pointer;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0);
+        width: 101%;
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+      }
+      
+      /* creates a pseudo-element for mouse hover the button*/
+      .send::after {
+        content: "";
+        background-color: #B0C436;
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        height: 100%;
+        top: 7px;
+        left: 7px;
+        transition: 0.2s;
+      }
+      /* After the mouse hover the button,background color will back to original position. */
+      .send:hover::after {
+        top: 0px;
+        left: 0px;
+      }
+    
+    
+      /* ---- footer ----- */
+    /* Using padding to locate media link and copyright */
+    footer {
+        padding-top:20px ;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction:column;
+        background-color: #B0C436;
+        font-size: 20px;
+    }
+    footer p {
+        font-size: 15px;
+        font-family: 'Rajdhani', sans-serif;
+    }
+    /* Using flex to locatethe media link and copyright */
+    .media {
+        display: flex;
+        justify-content:center;
+        margin-bottom: 10px;
+        color: #2c1931;
+    }
+    .copyright {
+        display: flex;
+        justify-content:center;
+        opacity: 65%;
+        color: #653A71;
+    }
+    }
+    
