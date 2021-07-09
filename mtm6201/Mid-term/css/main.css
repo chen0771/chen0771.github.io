@@ -27,12 +27,6 @@ time, mark, audio, video {
 I am adding a media screen size for respond to dasktop screen*/
 @media screen and (min-width: 1200px){
 
- /* Setting margin and center the menu content */
-
-.icecream{
-    display: flex;
-    justify-content: center;
-}
 
 .all {
     background-color: rgb(255, 243, 205);
@@ -66,6 +60,10 @@ header {
     grid-template-columns:repeat(6,1fr);
     list-style: none;
 }
+/* Using grid-column to seperate "products" and "find us" */
+.findus {
+    grid-column:5/span 1;
+}
 
 .navbar a {
     text-decoration: none;
@@ -80,17 +78,16 @@ header {
 }
 
 /* Using :hover to creating transition of mouse hover the button */
+/* Using inset at box-shadow, the shadow is assumed to be a drop shadow (as if the box were raised above the content). */
 .navbar a:hover {
     box-shadow: inset 256px 0 0 0 #653A71;
     color: #fff;
 }
 
-/* Using grid-column to seperate "products" and "find us" */
-.findus {
-    grid-column:5/span 1;
-}
+
 
 /* ---- header title ----- */
+/* I used "background-attachment: fixed;" The background is fixed relative to the viewport. */
 .headerad {
     background-image: url(../images/2.jpeg);
     background-position: 30% 40%;
@@ -99,15 +96,11 @@ header {
     background-attachment: fixed;
 }
 
+
 .title {
     padding: 200px 0px 0 350px;
     color:cornsilk;
     animation: title 2s;
-}
-
-h1 {
-    font-size: 70px;
-    font-family: 'Pacifico', cursive;
 }
 @keyframes title {
     0% {
@@ -119,6 +112,11 @@ h1 {
         opacity: 1;
         transform: translateY(0px);
     }
+}
+
+h1 {
+    font-size: 70px;
+    font-family: 'Pacifico', cursive;
 }
 
 .title p {
@@ -168,6 +166,18 @@ p {
 
 /* ---- Body content: menu --- */
 
+ /* Setting margin and center the menu content */
+/* Using "display:grid" to Layout menu area.
+ Using margin to making gap.*/
+ .icecream{
+    justify-content: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(2,1fr);
+    text-align: center;
+}
 
 h2 {
     margin: 20px 0 50px 0;
@@ -186,14 +196,6 @@ h2 {
     padding: 30px;
 }
 
-.icecream {
-    margin-left: 300px;
-    margin-right: 300px;
-    display: grid;
-    grid-template-columns:repeat(3,1fr);
-    grid-template-rows:repeat(2,1fr);
-    text-align: center;
-}
 .icecream p {
     color: #653A71;
     font-size: 20px;
@@ -248,7 +250,7 @@ h2 {
     justify-content: center;
     flex-direction: column;
 }
-
+/* Organized image and text by flex */
 .story-grid {
     display: flex;
     justify-content: center;
@@ -279,6 +281,9 @@ footer p {
     font-size: 15px;
     font-family: 'Rajdhani', sans-serif;
 }
+/* icons - find icons from Fontawesome. margin the top and bottom. Using "display:flex;"
+and "justify-content: center;" to put the icons in center flex container  */
+
 .media {
     display: flex;
 	justify-content:center;

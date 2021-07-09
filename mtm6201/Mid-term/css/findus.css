@@ -73,6 +73,7 @@ header {
 }
 
 /* Using :hover to creating transition of mouse hover the button */
+/* Using inset at box-shadow, the shadow is assumed to be a drop shadow (as if the box were raised above the content). */
 .navbar a:hover {
     box-shadow: inset 256px 0 0 0 #653A71;
     color: #fff;
@@ -454,7 +455,6 @@ I am adding a media screen size for respond to table screen*/
         display: flex;
         justify-content:center;
         margin-bottom: 10px;
-        color: #2c1931;
     }
     .copyright {
         display: flex;

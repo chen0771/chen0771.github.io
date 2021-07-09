@@ -83,6 +83,7 @@ header {
 }
 
 /* Using :hover to creating transition of mouse hover the button */
+/* Using inset at box-shadow, the shadow is assumed to be a drop shadow (as if the box were raised above the content). */
 .navbar a:hover {
     box-shadow: inset 256px 0 0 0 #653A71;
     color: #fff;
@@ -131,7 +132,7 @@ h1 {
 .icecream {
     display: grid;
     grid-template-columns:repeat(2,1fr);
-    grid-template-rows:repeat(6,1fr);
+    grid-template-rows:repeat(3,1fr);
 }
 .icecream p {
     
@@ -395,7 +396,7 @@ I am adding a media screen size for respond to table screen*/
     .icecream {
         display: grid;
         grid-template-columns:repeat(2,1fr);
-        grid-template-rows:repeat(6,1fr);
+        grid-template-rows:repeat(3,1fr);
     }
     .icecream p {
         
