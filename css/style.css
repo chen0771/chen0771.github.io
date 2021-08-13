@@ -365,7 +365,7 @@ i {
 }
 
 .form{
-    display:lex;;
+    display:flex;;
     flex-direction:column;
     
 }
