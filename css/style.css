@@ -175,6 +175,7 @@ h2.about-title {
 }
 
 .about-content {
+    max-width: 500px;
     color: #D89500;
     padding-right: 30px;
     padding-left: 30px;
@@ -224,17 +225,16 @@ i {
 
 /* ******* Banner ********* */
 /* This is banner for the website */
-.banner-1 {
+.contaner {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 80px;
+    padding-right: 80px;
     background-color: #F5F5F5;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
 
 }
 
-h1.hithere {
+.hithere {
     margin: 0 0 30px 0;
     font-size: 30px;
     color: #1E263E;
@@ -242,7 +242,9 @@ h1.hithere {
 }
 
 .about-img {
+    margin-bottom: 60px;
     max-width: 100%;
+    min-width: 400px;
     border-radius: 50px;
     box-shadow: rgba(0, 0, 0, 0.466) 10px 5px 10px;
 }
@@ -262,6 +264,8 @@ h1.hithere {
 }
 
 .about-2 {
+    max-width: 400px;
+    min-width: 300px;
     margin-left: 30px;
     margin-right: 80px;
     text-align: center;
@@ -282,7 +286,10 @@ h1.hithere {
     font-family: 'Pattaya', sans-serif;
     color: #1E263E;
 }
-.block-1, .block-2, .block-3{
+
+.block-1,
+.block-2,
+.block-3 {
     box-shadow: #D1A35A 10px 20px 0;
 }
 
@@ -300,16 +307,17 @@ h1.hithere {
 }
 
 .music {
-    font-family: 'Pattaya', sans-serif;;
+    font-family: 'Pattaya', sans-serif;
+    ;
     margin-left: 20px;
     display: grid;
-    grid-template-columns: repeat(1,2fr);
+    grid-template-columns: repeat(1, 2fr);
 }
 
 .music img {
-    
+
     width: 70%;
-    
+
 
 }
 
@@ -341,6 +349,7 @@ h1.hithere {
     font-family: 'Pattaya', sans-serif;
     color: #1E263E;
 }
+
 /* ***************** Contact ******************* */
 /* ***************** Contact ******************* */
 /* ***************** Contact ******************* */
@@ -361,8 +370,9 @@ h1.hithere {
     
 }
 
-.SendButton{
+.SendButton {
     display: flex;
     justify-content: center;
-    margin-bottom: 60px;
+    align-items: center;
+    height: 200px;
 }
